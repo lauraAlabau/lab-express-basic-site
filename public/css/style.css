@@ -1,0 +1,122 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     background: rgb(245,251,255);
+    background: radial-gradient(circle, rgba(245,251,255,1) 23%, rgba(185,212,235,1) 100%); */
+}
+
+h1{
+    font-weight: 600;
+    font-size: 5em;
+    color: #468bb5;
+}
+h3{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 1em;
+    color: #aaaaaa;
+}
+
+h5{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+h6{
+    font-size: .8em;
+    font-weight: 600;
+    color: #606060;
+}
+/* NAV  BAR */
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    justify-content: space-between;
+}
+
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link{
+    color: #606060;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #bc324b;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #bc324b;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+.navbar-light .navbar-brand{
+    color: #bc324b;
+}
+
+/******************************************************************************/
+/* HOME */
+#home{
+    background-image: url(/img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #468bb5;
+}
+#nav{
+    border-bottom: 2px solid #bc324b;
+}
+
+#welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+/******************************************************************************/
+/* ABOUT */
+div#about {
+    display: flex;
+    justify-content: center;
+}
+/******************************************************************************/
+/* WORKS */
+#works-gallery{
+    margin: 2em auto;
+}
+
+
+/******************************************************************************/
+/* GALLERY */
+
+/* SLIDE IMGS */
+
+/* .carousel-item,
+.carousel-item.active{
+    max-height: 500px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:550px;
+} */
+
+
+.carousel-control-prev{
+    justify-content: flex-start;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #bc324b;
+    padding: 50px 25px;
+}
+
+.carousel-control-next{
+    justify-content: flex-end; 
+}
+
+.card{
+    border: none;
+    background: transparent;
+}
