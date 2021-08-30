@@ -1,7 +1,5 @@
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-/*     background: rgb(245,251,255);
-    background: radial-gradient(circle, rgba(245,251,255,1) 23%, rgba(185,212,235,1) 100%); */
 }
 
 h1{
@@ -13,24 +11,12 @@ h3{
     font-weight: 600;
     font-size: 1.5em;
 }
-
 h4{
     font-weight: 600;
-    font-size: 1em;
-    color: #aaaaaa;
+    font-size: 1.2em;
 }
 
-h5{
-    font-size: 1em;
-    font-weight: 600;
-}
-
-h6{
-    font-size: .8em;
-    font-weight: 600;
-    color: #606060;
-}
-/* NAV  BAR */
+/* NAV  BAR GENERIC*/
 
 nav.navbar.navbar-expand-lg.navbar-light {
     justify-content: space-between;
@@ -55,6 +41,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
     color: #bc324b;
 }
 
+
 /******************************************************************************/
 /* HOME */
 #home{
@@ -74,49 +61,52 @@ nav.navbar.navbar-expand-lg.navbar-light {
     margin-top: 20%;
 }
 
+
 /******************************************************************************/
 /* ABOUT */
 div#about {
     display: flex;
     justify-content: center;
 }
+
 /******************************************************************************/
 /* WORKS */
 #works-gallery{
     margin: 2em auto;
+}
+#works-gallery .col-md-4 {
+    margin-bottom: 2%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0px;
+    height: 100%;
+    width: 92%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(349, 58%, 47%, 0.85);
+}
+  
+  
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
 }
 
 
 /******************************************************************************/
 /* GALLERY */
 
-/* SLIDE IMGS */
-
-/* .carousel-item,
-.carousel-item.active{
-    max-height: 500px;
-}
-
-.carousel-item img {
-    object-fit:cover;
-    max-height:550px;
-} */
-
-
-.carousel-control-prev{
-    justify-content: flex-start;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    background-color: #bc324b;
-    padding: 50px 25px;
-}
-
-.carousel-control-next{
-    justify-content: flex-end; 
-}
-
-.card{
-    border: none;
-    background: transparent;
-}
